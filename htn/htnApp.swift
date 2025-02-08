@@ -7,9 +7,17 @@
 
 import SwiftUI
 import SwiftData
+import FirebaseCore
+import FirebaseFirestore
+import FirebaseAuth
 
 @main
 struct htnApp: App {
+    @StateObject var storage = Storage()
+    
+    init() {
+        FirebaseApp.configure()
+    }
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
@@ -22,10 +30,12 @@ struct htnApp: App {
             fatalError("Could not create ModelContainer: \(error)")
         }
     }()
+    
 
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(storage)
         }
         .modelContainer(sharedModelContainer)
     }
