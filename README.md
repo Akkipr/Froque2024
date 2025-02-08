@@ -19,3 +19,8 @@
 
 ## What's next for Froque
 * I have so many ideas planned for Forque. Hopefully, using an AI model, I could easily update the discounts/extra-curricular activities within the area a lot easier. Not only that, but tailoring specific activities based on location would be an amazing idea.
+
+<p align="center">
+  <img src="htn/images/Homepage.jpg" alt="Homepage" width="45%">
+  <img src="htn/images/Login.jpg" alt="Another Image" width="45%">
+</p>
